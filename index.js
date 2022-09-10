@@ -26,9 +26,11 @@ incCartItemsBtn.addEventListener("click", () => {
  document.getElementById(" qtyViewCart").innerText=Quantity;
   StoreItem = document.getElementById("Item").innerText =
     CartItem + " " + "quantity is =" + Quantity;
- let updateVal=document.getElementById(" qtyViewCart").value
+  document.getElementById(" qtyViewCart")=Quantity;
+
+//  let updateVal=document.getElementById(" qtyViewCart").value
  
-  document.getElementById("qty").innerText = Quantity;
+//   document.getElementById("qty").innerText = Quantity;
 });
 //after added to cart
 const dropCartItemBtn = document.getElementById("cartDec");
@@ -38,9 +40,10 @@ dropCartItemBtn.addEventListener("click", () => {
   document.getElementById("qtyViewCart").innerText = Quantity;
   StoreItem = document.getElementById("Item").innerText =
     CartItem + " " + "quantity is =" + Quantity;
- let updateDec=document.getElementById(" qtyViewCart").value;
+ document.getElementById(" qtyViewCart")=Quantity;
+ //let updateDec=document.getElementById(" qtyViewCart").value;
 
-  document.getElementById("qty").innerText = updateDec;
+//   document.getElementById("qty").innerText = updateDec;
 });
 //used to add product to cart
 const addtocart = document.getElementById("pd1");
