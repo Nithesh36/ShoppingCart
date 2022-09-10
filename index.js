@@ -72,5 +72,6 @@ removeCart.addEventListener("click", () => {
   if (confirmationCartAdded)
     document.getElementById("CartItems").style.display = "none";
    document.getElementById("qty").innerText=0;
+ Quantity=0;
   
 });
