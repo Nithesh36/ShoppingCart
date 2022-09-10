@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shopping Cart UI</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet">
+</head>
+
+<body>
+    <div class="CartContainer">
+        <div class="Header">
+            <center>
+                <h3 class="Heading" style="margin:60px">Shopping Cart</h3>
+            </center>
+
+        </div>
+
+        <div id="products">
+
+            <b>
+                <p style="margin:60px" id="Pd_no1">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</p>
+                <p style="color:rgb(87, 35, 1)255);margin: 30px">Category :men's clothing</p>
+            </b>
+            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="image1_not_found" id="product1">
+            <p style="display:inline;margin-left:70px;margin-top: 100px;">price :109.95</p>
+            <button type="button" style="width:70px;height:27px;border-radius: 35%;border:none;margin-left: 20px;" id="increment">+</button>
+            <p style="display:inline;margin:4px " id="qty">1</p>
+            <button style="width:70px;height:27px;border-radius: 35%;border:none;margin-left: 10px;" id="decrement">-</button>
+        </div>
+        <div id="cart">
+
+            <center> <button
+                    style="background-color: lightgreen;width:100px;height:25px;white-space: none;
+                    
+                    overflow:hidden;border:none;margin:30px" id="pd1">
+                    
+                    add to
+                    cart</button>
+                    <button style="display:inline;border: none;color: slateblue;width:100px;height:25px" id="showCart">View Cart</button>
+                    <button style="display:inline;border: none;width:100px;height:32px;margin: 20px" id="removeCart">Remove Cart</button>
+            </center>
+            
+        </div>
+        <div id="ProductsList">
+            <ul id="CartItems" style="display: none;list-style-type:none ;">
+          <center>  <li id="Item"   >1</center>
+
+        
+            </li>
+       <center> <li style="margin:30px">
+
+            <button type="button" style="width:70px;height:27px;border-radius: 35%;border:none;margin-left: 20px;" id="cartInc">+</button>
+            <p style="display:inline;margin:4px " id="qtyViewCart">0</p>
+            <button style="width:70px;height:27px;border-radius: 35%;border:none;margin-left: 10px;" id="cartDec">-</button>
+           <input type="text" value="" style="width: 30px;" id="manualEntry"></input>
+        </li></center>
+        </ul>
+        </div>
+<script src="index.js"></script>
+</body>
+
+</html>
