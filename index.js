@@ -47,7 +47,7 @@ const enterManualData = document.getElementById("manualEntry");
 enterManualData.addEventListener("change", (e) => {
   StoreItem = document.getElementById("Item").innerText =
     CartItem + " " + "quantity is =" + e.target.value;
-document.getElementById("qty").innerText = e.target.value;
+//document.getElementById("qty").innerText = e.target.value;
 enterManualData.innerText="";
 });
 
