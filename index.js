@@ -20,11 +20,14 @@ let StoreItem;
 const incCartItemsBtn = document.getElementById("cartInc");
 incCartItemsBtn.addEventListener("click", () => {
   Quantity = Quantity + 1;
-let updateVal=document.getElementById(" qtyViewCart").value
-  document.getElementById("qtyViewCart").innerText =updateVal;
 
+
+ 
+ document.getElementById(" qtyViewCart").innerText=Quantity;
   StoreItem = document.getElementById("Item").innerText =
     CartItem + " " + "quantity is =" + Quantity;
+ let updateVal=document.getElementById(" qtyViewCart").value
+ 
   document.getElementById("qty").innerText = Quantity;
 });
 //after added to cart
