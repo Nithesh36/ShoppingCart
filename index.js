@@ -40,7 +40,7 @@ dropCartItemBtn.addEventListener("click", () => {
   document.getElementById("qtyViewCart").innerText = Quantity;
   StoreItem = document.getElementById("Item").innerText =
     CartItem + " " + "quantity is =" + Quantity;
- document.getElementById(" qtyViewCart")=Quantity;
+// document.getElementById(" qtyViewCart")=Quantity;
  //let updateDec=document.getElementById(" qtyViewCart").value;
 
 //   document.getElementById("qty").innerText = updateDec;
