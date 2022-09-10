@@ -20,7 +20,7 @@ let StoreItem;
 const incCartItemsBtn = document.getElementById("cartInc");
 incCartItemsBtn.addEventListener("click", () => {
   Quantity = Quantity + 1;
-   document.getElementById("qtyViewCart").innerText = 11;
+   document.getElementById("qtyViewCart").innerText = Quantity;
   StoreItem = document.getElementById("Item").innerText =
     CartItem + " " + "quantity is =" + Quantity;
   
