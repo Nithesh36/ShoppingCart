@@ -10,6 +10,7 @@ incrementBtn.addEventListener("click", () => {
 
 const decrementBtn = document.getElementById("decrement");
 decrementBtn.addEventListener("click", () => {
+if(Quantity>0)
   Quantity = Quantity - 1;
   document.getElementById("qty").innerText = Quantity;
 });
@@ -58,4 +59,5 @@ const removeCart = document.getElementById("removeCart");
 removeCart.addEventListener("click", () => {
   if (confirmationCartAdded)
     document.getElementById("CartItems").style.display = "none";
+document.getElementById("qty").innerText = 0;
 });
