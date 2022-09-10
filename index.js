@@ -10,7 +10,7 @@ incrementBtn.addEventListener("click", () => {
 
 const decrementBtn = document.getElementById("decrement");
 decrementBtn.addEventListener("click", () => {
-// if(Quantity>0)
+  if(Quantity>0)
   Quantity = Quantity - 1;
   document.getElementById("qty").innerText = Quantity;
 });
@@ -27,8 +27,8 @@ incCartItemsBtn.addEventListener("click", () => {
 //after added to cart
 const dropCartItemBtn = document.getElementById("cartDec");
 dropCartItemBtn.addEventListener("click", () => {
- if(Quantity>0)
-Quantity = Quantity - 1;
+  if(Quantity>0)
+  Quantity = Quantity - 1;
   document.getElementById("qtyViewCart").innerText = Quantity;
   StoreItem = document.getElementById("Item").innerText =
     CartItem + " " + "quantity is =" + Quantity;
@@ -47,11 +47,9 @@ const enterManualData = document.getElementById("manualEntry");
 enterManualData.addEventListener("change", (e) => {
   StoreItem = document.getElementById("Item").innerText =
     CartItem + " " + "quantity is =" + e.target.value;
-document.getElementById("qty").innerText = e.target.value;
-enterManualData.innerText="";
+   document.getElementById("qty").innerText = e.target.value;
+  enterManualData.innerText="";
 });
-
-
 //show the  items in the cart
 const showCart = document.getElementById("showCart");
 showCart.addEventListener("click", () => {
@@ -64,5 +62,6 @@ const removeCart = document.getElementById("removeCart");
 removeCart.addEventListener("click", () => {
   if (confirmationCartAdded)
     document.getElementById("CartItems").style.display = "none";
-document.getElementById("qty").innerText = 0;
+   document.getElementById("qty").innerText=0;
+  
 });
