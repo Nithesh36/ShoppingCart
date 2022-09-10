@@ -20,7 +20,8 @@ let StoreItem;
 const incCartItemsBtn = document.getElementById("cartInc");
 incCartItemsBtn.addEventListener("click", () => {
   Quantity = Quantity + 1;
-  document.getElementById("qtyViewCart").innerText = Quantity;
+let updateVal=document.getElementById(" qtyViewCart").value
+  document.getElementById("qtyViewCart").innerText =updateVal;
 
   StoreItem = document.getElementById("Item").innerText =
     CartItem + " " + "quantity is =" + Quantity;
@@ -34,7 +35,9 @@ dropCartItemBtn.addEventListener("click", () => {
   document.getElementById("qtyViewCart").innerText = Quantity;
   StoreItem = document.getElementById("Item").innerText =
     CartItem + " " + "quantity is =" + Quantity;
-  document.getElementById("qty").innerText = Quantity;
+ let updateDec=document.getElementById(" qtyViewCart").value;
+
+  document.getElementById("qty").innerText = updateDec;
 });
 //used to add product to cart
 const addtocart = document.getElementById("pd1");
