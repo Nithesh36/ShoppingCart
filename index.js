@@ -26,7 +26,7 @@ incCartItemsBtn.addEventListener("click", () => {
  document.getElementById(" qtyViewCart").innerText=Quantity;
   StoreItem = document.getElementById("Item").innerText =
     CartItem + " " + "quantity is =" + Quantity;
-  document.getElementById(" qtyViewCart")=Quantity;
+  
 
 //  let updateVal=document.getElementById(" qtyViewCart").value
  
