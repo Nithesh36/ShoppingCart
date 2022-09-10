@@ -64,7 +64,7 @@ enterManualData.addEventListener("change", (e) => {
 const showCart = document.getElementById("showCart");
 showCart.addEventListener("click", () => {
   //alert(StoreItem +"quantity is =" + Quantity)
- if(!removed)
+ if(removed==false || confirmationCartAdded)
   document.getElementById("CartItems").style.display = "block";
  else
     document.getElementById("CartItems").style.display = "none";
