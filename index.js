@@ -1,6 +1,7 @@
 let Quantity = 1;
 let CartItem;
 let confirmationCartAdded = false;
+let removed=false;
 const incrementBtn = document.getElementById("increment");
  document.getElementById("qtyViewCart").innerText = 1;
 //before added to cart
@@ -63,7 +64,11 @@ enterManualData.addEventListener("change", (e) => {
 const showCart = document.getElementById("showCart");
 showCart.addEventListener("click", () => {
   //alert(StoreItem +"quantity is =" + Quantity)
+ if(remove==false)
   document.getElementById("CartItems").style.display = "block";
+ else
+    document.getElementById("CartItems").style.display = "none";
+
   confirmationCartAdded = true;
 });
 //remove all products in the cart
@@ -73,5 +78,5 @@ removeCart.addEventListener("click", () => {
     document.getElementById("CartItems").style.display = "none";
    document.getElementById("qty").innerText=0;
  Quantity=0;
-  
+  removed=true;
 });
