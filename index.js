@@ -2,6 +2,7 @@ let Quantity = 1;
 let CartItem;
 let confirmationCartAdded = false;
 const incrementBtn = document.getElementById("increment");
+ document.getElementById("qtyViewCart").innerText = 1;
 //before added to cart
 incrementBtn.addEventListener("click", () => {
   Quantity = Quantity + 1;
